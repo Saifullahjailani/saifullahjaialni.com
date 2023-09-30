@@ -1,0 +1,18 @@
+@import 'src/styles.scss';
+.box{
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: 10px;
+  background-color: $low-alpha-green;
+  color: $green;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.9rem;
+  border-radius: 10px / 20px;
+}
+
+.box > p{
+  padding: 0.5rem;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+
+}

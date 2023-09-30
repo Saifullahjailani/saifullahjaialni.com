@@ -1,0 +1,19 @@
+@import "src/styles.scss";
+
+
+li{
+  color: $light-slate;
+  font-family: $roboto-slab;
+  list-style: none;
+}
+
+
+
+
+@media (max-width: $md-screen-size) {
+  .nav-bar{
+    display: none;
+  }
+
+}
+

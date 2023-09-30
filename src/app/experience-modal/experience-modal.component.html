@@ -1,0 +1,5 @@
+<app-layout [name]="experience?.name" [link]="experience?.company_web" [role]="experience?.role">
+  <p left-box ngClass="date">{{experience?.start}} - {{experience?.end}}</p>
+  <span description *ngFor="let line of experience?.bullet_points">{{line}} </span>
+  <app-skill-box blobs *ngFor="let item of experience?.skills" [skill]="item"></app-skill-box>
+</app-layout>

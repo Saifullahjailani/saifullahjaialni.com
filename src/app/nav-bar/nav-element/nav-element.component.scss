@@ -1,0 +1,18 @@
+@import 'src/app/nav-bar/nav-bar.component.scss';
+
+.span-style{
+  color: $slate;
+  font-family: $roboto-slab;
+  font-weight: 300;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.span-style:hover{
+  color: $white;
+  cursor: pointer;
+}
+
+a{
+  all: unset;
+}

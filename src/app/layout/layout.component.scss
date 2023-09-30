@@ -1,0 +1,91 @@
+@import 'src/styles.scss';
+
+.exp-modal-layout{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  padding: 3%;
+}
+
+.exp-modal-layout:hover{
+  background-color: $lightest-navy-color;
+  cursor: pointer;
+}
+
+.exp-modal-layout:hover .company-name{
+  color: $green;
+
+}
+
+.left-modal-layout{
+  flex: 1;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-right: 10px;
+  justify-content: center;
+}
+
+.bottom{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  overflow-wrap: normal;
+  flex-wrap: wrap;
+}
+
+.right-modal-layout{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.top{
+  font-family: $roboto;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  height: fit-content;
+  color: $light-slate;
+
+}
+a{
+  all: unset
+}
+.company-name{
+  font-family: $roboto-slab;
+  font-size: 1.5rem;
+  margin: 0;
+  color: $lightest-slate;
+
+}
+
+.description{
+  font-family: $roboto;
+  font-weight: 300;
+  color: $slate;
+  margin-top: 3%;
+}
+
+.role{
+  margin: 0;
+  padding: 0;
+}
+.sm-logo{
+  fill: $lightest-slate;
+  color: $lightest-slate;
+}
+
+
+@media (max-width: $sm-screen-size) {
+  .exp-modal-layout{
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  .logo-cover{
+    display: none;
+  }
+}

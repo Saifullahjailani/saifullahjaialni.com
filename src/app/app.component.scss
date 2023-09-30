@@ -1,0 +1,113 @@
+/* to access global color scope */
+@import 'src/styles.scss';
+
+.title-section{
+  color: $white;
+  font-family: $roboto-slab;
+  font-size: 1.5rem;
+}
+.top-left{
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+}
+.right{
+  margin: 0;
+}
+
+.name{
+  color: $white;
+  font-family: $roboto-slab;
+  font-weight: 800;
+  font-size: 3rem;
+}
+
+.summary{
+  color: $light-slate;
+  font-weight: 400;
+  font-size: 1.2rem;
+  font-family: $roboto;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  padding-right: 5%;
+  transition: fill 0.3s ease;
+  width: 50%;
+  fill: lightblue;
+}
+.layout{
+  background-color: $navy-color;
+  padding: 5%;
+  height: 100vh;
+  width: 100vw;
+  overflow-y: auto;
+
+
+}
+
+.bottom-left{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
+  padding-top: 25%;
+  flex-grow: 1;
+
+}
+
+svg{
+
+  fill: $light-slate;
+}
+.contacts > div :hover{
+  fill: $white;
+}
+
+@media (min-width: $md-screen-size) {
+  .layout{
+    display: grid;
+    gap: 10%;
+    grid-template-columns: 1fr 2fr;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+  }
+  .right{
+    overflow:auto;
+    scroll-behavior: smooth;
+  }
+
+}
+
+@media (max-width: $md-screen-size) {
+  .bottom-left{
+    flex:none;
+    padding-top: 5%;
+
+
+  }
+  .top-left{
+    display: flex;
+    flex-direction: column;
+    height:fit-content;
+
+  }
+  .layout{
+    gap: 0;
+    padding-top: 10%;
+  }
+  .name{
+    font-size: 2rem;
+  }
+  .right{
+    padding-top: 5%;
+  }
+}
+
+

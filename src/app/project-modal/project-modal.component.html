@@ -1,0 +1,12 @@
+<app-layout [name]="projects?.name" [link]="projects?.description?.link">
+  <p left-box ngClass="date">{{projects?.completed_by?.season}} {{projects?.completed_by?.month}}
+    {{projects?.completed_by?.year}} </p>
+  <span description>{{projects?.description?.info}} </span>
+  <div blobs ngClass="skills">
+    <app-skill-box blobs *ngFor="let item of projects?.description?.language" [skill]="item"></app-skill-box>
+    <app-skill-box blobs *ngFor="let item of projects?.description?.libraries" [skill]="item"></app-skill-box>
+    <app-skill-box blobs *ngFor="let item of projects?.description?.frameworks" [skill]="item"></app-skill-box>
+    <app-skill-box blobs *ngFor="let item of projects?.description?.concepts" [skill]="item"></app-skill-box>
+    <app-skill-box blobs *ngFor="let item of projects?.description?.api" [skill]="item"></app-skill-box>
+  </div>
+</app-layout>

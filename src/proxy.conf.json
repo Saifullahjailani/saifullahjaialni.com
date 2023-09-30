@@ -1,0 +1,10 @@
+{
+  "/api": {
+    "target": "https://saifullahjailani.github.io/api.personal.data.io/",
+    "secure": false,
+    "pathRewrite": {
+      "^/api": ""
+    },
+    "changeOrigin": true
+  }
+}

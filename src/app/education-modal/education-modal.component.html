@@ -1,0 +1,6 @@
+<app-layout [name]="education?.university" [role]="education?.degree" [major]="education?.major" [graduation_date]="
+  education?.end" [link]="education?.link">
+  <p left-box ngClass="date">{{education?.end}}</p>
+  <img logo ngClass="ucb-logo" [src]="education?.logo" alt="UCB Logo" height="100%" />
+  <span description *ngFor="let line of education?.bullet_points">{{line}} </span>
+</app-layout>
