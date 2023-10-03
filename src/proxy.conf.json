@@ -1,6 +1,6 @@
 {
   "/api": {
-    "target": "https://saifullahjailani.github.io/api.personal.data.io",
+    "target": "/user.json",
     "secure": false,
     "pathRewrite": {
       "^/api": ""
