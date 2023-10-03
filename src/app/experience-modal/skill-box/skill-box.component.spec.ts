@@ -8,8 +8,8 @@ describe('SkillBoxComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [SkillBoxComponent]
-    });
+    imports: [SkillBoxComponent]
+});
     fixture = TestBed.createComponent(SkillBoxComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

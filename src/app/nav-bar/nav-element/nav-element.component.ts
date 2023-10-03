@@ -6,14 +6,17 @@ import {
 } from '@angular/core';
 import { Router, NavigationEnd, Scroll } from '@angular/router';
 import { eventListeners } from '@popperjs/core';
+import { NgClass, NgIf } from '@angular/common';
 
 
 
 @Component({
-  selector: 'app-nav-element',
-  templateUrl: './nav-element.component.html',
-  styleUrls: ['./nav-element.component.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush,
+    selector: 'app-nav-element',
+    templateUrl: './nav-element.component.html',
+    styleUrls: ['./nav-element.component.scss'],
+    changeDetection: ChangeDetectionStrategy.OnPush,
+    standalone: true,
+    imports: [NgClass, NgIf],
 })
 export class NavElementComponent implements OnInit {
   @Input() hovered: boolean = false;

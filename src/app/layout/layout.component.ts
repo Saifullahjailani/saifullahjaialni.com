@@ -1,9 +1,12 @@
 import { Component, EventEmitter, Output, Input } from '@angular/core';
+import { NgClass, NgIf } from '@angular/common';
 
 @Component({
-  selector: 'app-layout',
-  templateUrl: './layout.component.html',
-  styleUrls: ['./layout.component.scss']
+    selector: 'app-layout',
+    templateUrl: './layout.component.html',
+    styleUrls: ['./layout.component.scss'],
+    standalone: true,
+    imports: [NgClass, NgIf]
 })
 export class LayoutComponent {
   @Input() name?: string

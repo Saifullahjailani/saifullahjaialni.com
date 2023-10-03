@@ -16,25 +16,22 @@ import { LayoutComponent } from './layout/layout.component';
 
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    NavBarComponent,
-    NavElementComponent,
-    ExperienceModalComponent,
-    SkillBoxComponent,
-    EducationModalComponent,
-    ProjectModalComponent,
-    SkillsModalComponent,
-    LayoutComponent
-
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    HttpClientModule,
-    NgbModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+    declarations: [AppComponent],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        HttpClientModule,
+        NgbModule,
+        NavBarComponent,
+        NavElementComponent,
+        ExperienceModalComponent,
+        SkillBoxComponent,
+        EducationModalComponent,
+        ProjectModalComponent,
+        SkillsModalComponent,
+        LayoutComponent
+    ],
+    providers: [],
+    bootstrap: [AppComponent]
 })
 export class AppModule { }
