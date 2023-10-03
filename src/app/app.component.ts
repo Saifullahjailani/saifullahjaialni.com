@@ -15,11 +15,13 @@ export class AppComponent implements OnInit {
   constructor(private httpService: MyHttpService, private router: Router) { }
 
   ngOnInit(): void {
-    this.httpService.get().subscribe(
-      (user) => {
-        this.user = user
-      }
-    )
+    // this.httpService.get().subscribe(
+    //   (user) => {
+    //     this.user = user
+    //   }
+    // )
+
+    this.user = this.httpService.get();
 
     this.router.events.subscribe((event) => {
       if (!(event instanceof NavigationEnd)) {

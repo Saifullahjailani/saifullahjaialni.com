@@ -2,9 +2,9 @@ export interface Projects {
   name: string
   completed: string,
   completed_by: {
-    year: string
-    season: string
-    month: string
+    year?: string
+    season?: string
+    month?: string
   },
   description: {
     language?: string[],
