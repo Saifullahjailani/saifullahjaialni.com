@@ -10,8 +10,9 @@ export class MyHttpService {
   constructor(private httpClient: HttpClient) {
 
   }
-
   get() {
+
     return this.httpClient.get<User>("/user.json")
+
   }
 }
