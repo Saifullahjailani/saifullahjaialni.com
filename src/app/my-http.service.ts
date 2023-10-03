@@ -12,7 +12,7 @@ export class MyHttpService {
   }
   get() {
 
-    return this.httpClient.get<User>("saifullahjailani_com/assets/user.json")
+    return this.httpClient.get<User>("/assets/user.json")
 
   }
 }
