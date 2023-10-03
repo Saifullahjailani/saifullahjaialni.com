@@ -1,6 +1,6 @@
 {
   "/api": {
-    "target": "/user.json",
+    "target": "/saifullahjailani_com",
     "secure": false,
     "pathRewrite": {
       "^/api": ""
