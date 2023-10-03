@@ -13,6 +13,12 @@ export class MyHttpService {
   }
 
   get() {
-    return this.httpClient.get<User>(environment.user_path)
+    let api: string = ""
+    if (environment.production) {
+      api = '/api'
+    } else {
+      api = 'assets/user.json'
+    }
+    return this.httpClient.get<User>(api)
   }
 }
