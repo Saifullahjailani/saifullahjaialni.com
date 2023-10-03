@@ -12,6 +12,6 @@ export class MyHttpService {
   }
 
   get() {
-    return this.httpClient.get<User>("api")
+    return this.httpClient.get<User>("/user.json")
   }
 }
