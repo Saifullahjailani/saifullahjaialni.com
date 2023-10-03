@@ -1,0 +1,10 @@
+{
+  "/api": {
+    "target": "/user.json",
+    "secure": false,
+    "pathRewrite": {
+      "^/api": ""
+    },
+    "changeOrigin": true
+  }
+}

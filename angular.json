@@ -29,7 +29,8 @@
             "assets": [
               "src/favicon.ico",
               "src/user.json",
-              "src/assets"
+              "src/assets",
+              "src/user.json"
 
             ],
             "styles": [
@@ -73,7 +74,8 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "sj_web:build"
+            "browserTarget": "sj_web:build",
+            "proxyConfig": "src/proxy.conf.json"
           },
           "configurations": {
             "production": {
