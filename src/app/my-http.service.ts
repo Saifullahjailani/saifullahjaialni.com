@@ -13,6 +13,6 @@ export class MyHttpService {
   }
 
   get() {
-    return this.httpClient.get<User>('/assets/user.json')
+    return this.httpClient.get<User>('~/assets/user.json')
   }
 }
