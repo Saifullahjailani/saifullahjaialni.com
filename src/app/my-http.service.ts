@@ -15,7 +15,7 @@ export class MyHttpService {
   get() {
     let api: string = ""
     if (environment.production) {
-      api = '/api'
+      api = 'api/user.json'
     } else {
       api = 'assets/user.json'
     }
