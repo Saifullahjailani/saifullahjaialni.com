@@ -1,6 +1,6 @@
 {
   "/api": {
-    "target": "/saifullahjailani_com",
+    "target": "https://saifullahjailani.github.io/saifullahjailani_com",
     "secure": false,
     "pathRewrite": {
       "^/api": ""
