@@ -17,11 +17,9 @@ commands = [
 ]
 
 try:
+    print(build)
     result = subprocess.run(build, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True, check=True)
-
-    print("Exit Code:", result.returncode)
     print("Output:", result.stdout)
-    print("Error:", result.stderr)
 except subprocess.CalledProcessError as e:
     print(f"Error in build: {e}")
 
@@ -39,11 +37,11 @@ except Exception as e:  # Use 'Exception' to catch all exceptions
     print(e)
 
 for command in commands:
+    print(command)
     try:
         result = subprocess.run(command, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True, check=True)
-        print("Exit Code:", result.returncode)
         print("Output:", result.stdout)
-        print("Error:", result.stderr)
+
     except subprocess.CalledProcessError as e:
         print(f"Error in command: {e}")
 
