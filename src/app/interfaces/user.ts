@@ -11,6 +11,7 @@ export interface User {
   },
   contacts: Contacts
   summary: string
+  keywords?: string
   experience: Experience[]
   education: Education[]
   projects: Projects[]

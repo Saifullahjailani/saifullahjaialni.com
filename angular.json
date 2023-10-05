@@ -31,7 +31,6 @@
               "src/user.json",
               "src/assets",
               "src/user.json"
-
             ],
             "styles": [
               "src/styles.scss"

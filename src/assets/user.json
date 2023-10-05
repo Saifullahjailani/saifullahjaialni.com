@@ -5,6 +5,7 @@
       "city": "Sacramento",
       "state": "CA"
     },
+    "keywords": "Saifullah Jailani, Saifullah Jailani, Saifullah, Jaialni, Electrical Engineering and Computer Science, Software Engineer, Backend Development, Full-Stack Development, Algorithm Development, UI/UX Design, Web Development, Software Testing, Cryptography, Financial Market Analysis, Python Programming, Data Analysis, Figma Prototyping, React.js, JavaScript, Postgres Database, Heroku Deployment, AWS, Java, Software Optimization, Junit Testing, Selenium Testing, Cucumber Testing, Pytest, Python Instructor, Online Teaching, Electrical Engineering, Computer Science, UC Berkeley, Machine Learning, Git Version Control, Operating Systems, Databases, AI Development, Routing and Transport Layers, Secure File Sharing, Smart Sales Management System, PostgreSQL, Ruby on Rails, Google Civic API, HTML/CSS, JIRA, Git Version Control, SQL, SpringBoot, React.js, AWS/Azure, Agile Methodology, Microsoft Office, Adobe Suite",
     "contacts": {
       "emails": {
         "Gmail": "https://github.com/Saifullahjailani"
@@ -13,7 +14,7 @@
       "LinkedIn": "https://www.linkedin.com/in/saifullah-jailani-8840271b6/",
       "Instagram": "https://www.instagram.com/_sjailani_/"
     },
-    "summary": "Entry-level software engineer concentrated on the backend and full-stack software development. Proficient in algorithm development and optimization, UI/UX, web development and computer application, software testing, and cryptography.",
+    "summary": "Junior software engineer concentrated on the backend and full-stack software development. Proficient in algorithm development and optimization, UI/UX, web development and computer application, software testing, and cryptography.",
     "experience": [
       {
         "name": "KometX",

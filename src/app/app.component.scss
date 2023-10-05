@@ -110,4 +110,14 @@ svg{
   }
 }
 
+#about :hover #none-download-pdf{
+  display: none;
+}
 
+#about :hover #download-pdf{
+  display: inline;
+}
+
+#download-pdf{
+  display: none;
+}

@@ -13,6 +13,7 @@ import { EducationModalComponent } from './education-modal/education-modal.compo
 import { ProjectModalComponent } from './project-modal/project-modal.component';
 import { SkillsModalComponent } from './skills-modal/skills-modal.component';
 import { LayoutComponent } from './layout/layout.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 @NgModule({
@@ -29,7 +30,9 @@ import { LayoutComponent } from './layout/layout.component';
     ProjectModalComponent,
     SkillsModalComponent,
     LayoutComponent,
-    BrowserModule
+    BrowserModule,
+    BrowserAnimationsModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]

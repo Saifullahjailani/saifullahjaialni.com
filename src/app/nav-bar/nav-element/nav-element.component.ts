@@ -4,27 +4,25 @@ import {
   Input,
   OnInit,
 } from '@angular/core';
-import { Router, NavigationEnd, Scroll } from '@angular/router';
-import { eventListeners } from '@popperjs/core';
 import { NgClass, NgIf } from '@angular/common';
+import { NavServiceService } from '../nav-service.service';
 
 
 
 @Component({
-    selector: 'app-nav-element',
-    templateUrl: './nav-element.component.html',
-    styleUrls: ['./nav-element.component.scss'],
-    changeDetection: ChangeDetectionStrategy.OnPush,
-    standalone: true,
-    imports: [NgClass, NgIf],
+  selector: 'app-nav-element',
+  templateUrl: './nav-element.component.html',
+  styleUrls: ['./nav-element.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  standalone: true,
+  imports: [NgClass, NgIf],
 })
 export class NavElementComponent implements OnInit {
   @Input() hovered: boolean = false;
   @Input() clicked: boolean = false;
   @Input() label: string = 'no label given';
 
-
-  constructor(private router: Router) { }
+  constructor(private navService: NavServiceService) { }
   link: string = '#';
 
 
@@ -37,10 +35,14 @@ export class NavElementComponent implements OnInit {
   }
 
   nav_to() {
+    this.navService.setActive(this.label)
     document.getElementById(this.label.toLowerCase())?.scrollIntoView();
   }
 
   ngOnInit(): void {
     this.link += this.label.toLocaleLowerCase();
+    if (this.navService.getActive() == this.label) {
+      this.clicked = true;
+    }
   }
 }
