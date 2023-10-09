@@ -6,4 +6,5 @@ export interface Experience {
   bullet_points: string[]
   skills: string[]
   company_web?: string
+  attachments?: string[]
 }

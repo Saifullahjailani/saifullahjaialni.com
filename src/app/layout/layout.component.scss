@@ -6,9 +6,17 @@
   padding: 3%;
 }
 
+.bottom-sign{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+}
+
+
 .exp-modal-layout:hover{
   background-color: $lightest-navy-color;
-  cursor: pointer;
 }
 
 .exp-modal-layout:hover .company-name{

@@ -1,4 +1,5 @@
-<app-layout [name]="projects?.name" [link]="projects?.description?.link">
+<app-layout [name]="projects?.name" [link]="projects?.description?.link"
+  [attachments]="projects?.description?.attachments">
   <p left-box ngClass="date">{{projects?.completed_by?.season}} {{projects?.completed_by?.month}}
     {{projects?.completed_by?.year}} </p>
   <span description>{{projects?.description?.info}} </span>

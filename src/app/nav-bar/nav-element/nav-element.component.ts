@@ -4,6 +4,7 @@ import {
   Input,
   OnInit,
 } from '@angular/core';
+import { Observable } from 'rxjs';
 import { NgClass, NgIf } from '@angular/common';
 import { NavServiceService } from '../nav-service.service';
 
@@ -21,6 +22,7 @@ export class NavElementComponent implements OnInit {
   @Input() hovered: boolean = false;
   @Input() clicked: boolean = false;
   @Input() label: string = 'no label given';
+  @Input() active$?: Observable<string>
 
   constructor(private navService: NavServiceService) { }
   link: string = '#';

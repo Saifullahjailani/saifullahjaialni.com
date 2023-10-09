@@ -1,5 +1,4 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { User } from '../interfaces/user';
 import { NavElementComponent } from './nav-element/nav-element.component';
 import { NgClass, NgFor } from '@angular/common';
 import { NavServiceService } from './nav-service.service';

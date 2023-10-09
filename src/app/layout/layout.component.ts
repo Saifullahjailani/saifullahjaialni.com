@@ -1,12 +1,14 @@
-import { Component, EventEmitter, Output, Input } from '@angular/core';
-import { NgClass, NgIf } from '@angular/common';
+import { Component, Input } from '@angular/core';
+import { NgClass, NgFor, NgIf } from '@angular/common';
+import { LinkComponent } from './link/link.component';
+
 
 @Component({
-    selector: 'app-layout',
-    templateUrl: './layout.component.html',
-    styleUrls: ['./layout.component.scss'],
-    standalone: true,
-    imports: [NgClass, NgIf]
+  selector: 'app-layout',
+  templateUrl: './layout.component.html',
+  styleUrls: ['./layout.component.scss'],
+  standalone: true,
+  imports: [NgClass, NgIf, LinkComponent, NgFor]
 })
 export class LayoutComponent {
   @Input() name?: string
@@ -14,7 +16,7 @@ export class LayoutComponent {
   @Input() role?: string
   @Input() major?: string
   @Input() graduation_date?: string
-
+  @Input() attachments?: string[]
 
   navigate() {
     if (this.link) {
@@ -24,3 +26,6 @@ export class LayoutComponent {
 
   }
 }
+
+
+

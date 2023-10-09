@@ -1,4 +1,4 @@
-<div ngClass="exp-modal-layout unselectable" (click)="navigate()">
+<div ngClass="exp-modal-layout unselectable">
   <div ngClass="left-modal-layout">
     <ng-content select="[left-box]"></ng-content>
     <div ngClass="logo-cover">
@@ -8,6 +8,7 @@
   </div>
   <div ngClass="right-modal-layout">
     <div ngClass="top">
+      <!-- fixme:
       <p *ngIf="name" ngClass="company-name">{{name}} <span *ngIf="link"><svg ngClass="sm-log"
             xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ccd6f6"
             stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
@@ -15,6 +16,8 @@
               <path d="M18 14v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8c0-1.1.9-2 2-2h5M15 3h6v6M10 14L20.2 3.8" />
             </g>
           </svg></span></p>
+      -->
+      <p *ngIf="name" ngClass="company-name">{{name}} </p>
       <p ngClass="role" *ngIf="role">{{role}}</p>
       <p ngClass="role" *ngIf="major">{{major}}</p>
       <p ngClass="role" *ngIf="graduation_date">{{graduation_date}}</p>
@@ -25,7 +28,13 @@
         <ng-content select="[description]"></ng-content>
       </p>
     </div>
+    <div ngClass="bottom-sign">
+      <app-link *ngIf="link" [link]="link"></app-link>
+      <app-link [link]="link" *ngFor="let link of attachments" [isWeb]="false"></app-link>
+
+    </div>
     <div ngClass="bottom">
+
       <ng-content select="[blobs]"></ng-content>
     </div>
   </div>

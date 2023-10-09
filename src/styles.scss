@@ -48,6 +48,8 @@ $lightest-slate:	#ccd6f6;
 $white:	#e6f1ff;
 $green:	#64ffda;
 $low-alpha-green: #64ffdb1c;
+$gold: #5193AB;
+$dark-gold: #CBC2AA;
 
 $left-width: 40vw;
 
@@ -106,3 +108,7 @@ $sm-screen-size: 576px;
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+a{
+  all: unset;
+  cursor: pointer;
+}

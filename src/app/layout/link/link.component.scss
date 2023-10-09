@@ -1,0 +1,51 @@
+@import 'src/styles.scss';
+path{
+  fill: $gold;
+}
+
+svg{
+  height: 35px;
+  width: 35px;
+  box-sizing: border-box;
+  padding: 5px;
+}
+
+
+.main-frame{
+  flex: 0 0 calc(33.33% - 10px);
+  box-sizing: border-box;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 0;
+  transition: transform 0.3s ease;
+}
+a{
+  all: unset;
+}
+
+.main-frame:hover{
+  transform-origin: center;
+  transform: scale(1.2);
+}
+.main-frame :hover{
+  cursor: pointer;
+
+}
+.main-frame:hover  path{
+  fill: $dark-gold;
+}
+
+p{
+  font-family: $roboto;
+  font-weight: 400;
+  color: $gold;
+  margin-top: 3%;
+}
+
+.main-frame:hover p{
+  color: $dark-gold;
+}
+
